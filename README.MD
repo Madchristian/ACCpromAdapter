@@ -1,5 +1,3 @@
-Hier ist eine ausführliche README.md für dein Git-Repository, die dokumentiert, was der ACCpromAdapter macht, welche Technologien verwendet wurden und wie das Projekt strukturiert ist. Die README enthält auch Anweisungen zur Einrichtung und Nutzung.
-
 ACCpromAdapter
 
 Version: 1.0
