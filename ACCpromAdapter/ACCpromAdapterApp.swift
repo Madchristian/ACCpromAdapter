@@ -26,5 +26,6 @@ struct ACCpromAdapterApp: App {
         MenuBarExtra("ACCpromAdapter", systemImage: "server.rack") {
             ContentView(fetcher: fetcher)
         }
+        .menuBarExtraStyle(.window) // oder .automatic
     }
 }

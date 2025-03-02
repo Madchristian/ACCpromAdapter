@@ -76,26 +76,32 @@ class PrometheusServer {
 final class HTTPHandler: ChannelInboundHandler {
     typealias InboundIn = HTTPServerRequestPart
     typealias OutboundOut = HTTPServerResponsePart
-    
+
     private let logger: Logger
+    private var responseSent = false
 
     init(logger: Logger) {
         self.logger = logger
     }
-    
+
     func channelRead(context: ChannelHandlerContext, data: NIOAny) {
         let reqPart = unwrapInboundIn(data)
         switch reqPart {
         case .head(let request):
+            // Bei jedem neuen Request-Head das Flag zurücksetzen
+            responseSent = false
             // Überprüfe, ob es sich um den gewünschten GET /metrics handelt.
             if request.method != .GET || request.uri != "/metrics" {
                 sendNotFound(context: context, request: request)
+                responseSent = true
                 return
             }
         case .body:
-            // Für diesen einfachen HTTP-Server ignorieren wir den Body.
+            // Ignoriere den Body
             break
         case .end:
+            // Nur antworten, wenn noch keine Antwort gesendet wurde
+            guard !responseSent else { return }
             logger.log("Erhalte Anfrage für /metrics")
             let metrics = MetricsCache.shared.fullMetrics
             let status: HTTPResponseStatus = .ok
@@ -103,14 +109,15 @@ final class HTTPHandler: ChannelInboundHandler {
             headers.add(name: "Content-Type", value: "text/plain; charset=utf-8")
             headers.add(name: "Content-Length", value: "\(metrics.utf8.count)")
             let head = HTTPResponseHead(version: .init(major: 1, minor: 1), status: status, headers: headers)
+            
             context.write(wrapOutboundOut(.head(head)), promise: nil)
             var buffer = context.channel.allocator.buffer(capacity: metrics.utf8.count)
             buffer.writeString(metrics)
             context.write(wrapOutboundOut(.body(.byteBuffer(buffer))), promise: nil)
             context.writeAndFlush(wrapOutboundOut(.end(nil)), promise: nil)
+            responseSent = true
         }
     }
-    
     
     private func sendNotFound(context: ChannelHandlerContext, request: HTTPRequestHead) {
         var headers = HTTPHeaders()

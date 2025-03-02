@@ -5,24 +5,29 @@
 //  Created by Christian Strube on 27.02.25.
 //
 import SwiftUI
+import Combine
 
 struct ContentView: View {
+    @ObservedObject var metricsCache = MetricsCache.shared
+    
     @ObservedObject var fetcher: MetricsFetcher
     
-    // Die 5 wichtigsten Metriken, die angezeigt werden sollen:
+    // Verwende die gleichen wichtigen Keys für die UI-Anzeige
     private let importantKeys = [
         "acc_zrequestsfromclient",
         "acc_zrepliesfromorigintoclient",
         "acc_zbytesfromcachetoclient",
         "acc_zbytesfromorigintoclient",
-        "acc_zbytesdropped"
+        "acc_zbytesdropped",
+        "acc_zcreationdate"
     ]
     
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
-            // Überschrift
+            
+            // Titel
             Text("Cache Metrics")
-                .font(.system(size: 22, weight: .bold))
+                .font(.system(size: 18, weight: .bold))
                 .padding(.top, 10)
             
             if fetcher.metrics.isEmpty {
@@ -32,9 +37,8 @@ struct ContentView: View {
                         .font(.subheadline)
                         .foregroundColor(.gray)
                 }
-                .frame(maxWidth: .infinity, maxHeight: 150)
+                .frame(maxWidth: .infinity, maxHeight: 160)
             } else {
-                // Zeige nur die wichtigen Metriken in einem ScrollView
                 ScrollView {
                     VStack(alignment: .leading, spacing: 8) {
                         ForEach(importantKeys, id: \.self) { key in
@@ -57,48 +61,68 @@ struct ContentView: View {
                 .cornerRadius(8)
             }
             
+            HStack {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Letztes Update der Metriken:")
+                        .font(.footnote)
+                    if let creationDateString = fetcher.metrics["acc_zcreationdate"],
+                       let formattedDate = formattedCreationDate(from: creationDateString) {
+                        Text(formattedDate)
+                            .font(.footnote)
+                            .foregroundColor(.secondary)
+                    }
+                }
+                Spacer()
+            }
+            
+            // Fortschrittsbalken, der an MetricsCache.refreshProgress gebunden ist
+            ProgressView(value: metricsCache.refreshProgress)
+                .progressViewStyle(.linear)
+                .tint(.blue)
+                .frame(height: 4)
+                .padding(.bottom, 6)
+            
             Divider()
             
-            // UI-Buttons für Aktionen
+            // Buttons
             VStack(spacing: 10) {
-                HStack(spacing: 20) {
+                HStack(spacing: 12) {
                     Button("In Safari öffnen") {
                         if let url = URL(string: "http://localhost:9200/metrics") {
                             NSWorkspace.shared.open(url)
                         }
                     }
-                    .buttonStyle(LinkButtonStyle())
+                    .buttonStyle(.bordered)
                     
                     Button("URL kopieren") {
                         let pasteboard = NSPasteboard.general
                         pasteboard.clearContents()
                         pasteboard.setString("http://localhost:9200/metrics", forType: .string)
                     }
-                    .buttonStyle(LinkButtonStyle())
+                    .buttonStyle(.bordered)
                 }
                 
-                HStack(spacing: 20) {
+                HStack(spacing: 12) {
                     Button("Reset Defaults") {
                         resetUserDefaults()
                     }
-                    .foregroundColor(.blue)
-                    .buttonStyle(LinkButtonStyle())
+                    .buttonStyle(.borderedProminent)
+                    .tint(.blue)
                     
                     Button("Programm beenden") {
                         NSApp.terminate(nil)
                     }
-                    .foregroundColor(.red)
-                    .buttonStyle(LinkButtonStyle())
+                    .buttonStyle(.borderedProminent)
+                    .tint(.red)
                 }
             }
             .font(.system(size: 12))
             .padding(.bottom, 10)
         }
         .padding(12)
-        .frame(width: 320)
+        .frame(width: 270)
     }
     
-    /// Formatiert den Metrik-Namen, indem der Präfix "acc_" entfernt wird und der Rest schön formatiert wird.
     private func formattedMetricName(from key: String) -> String {
         if key.lowercased().hasPrefix("acc_") {
             let trimmed = key.dropFirst(4)
@@ -106,7 +130,17 @@ struct ContentView: View {
         }
         return key.capitalized
     }
-    /// Löscht den Key "selectedFileURL" aus den UserDefaults
+
+    func formattedCreationDate(from timestampString: String) -> String? {
+        guard let timestamp = Double(timestampString) else { return nil }
+        // Nutze Apple-Reference-Date (1. Januar 2001) statt Unix-Epoch (1970)
+        let date = Date(timeIntervalSinceReferenceDate: timestamp)
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .short
+        return formatter.string(from: date)
+    }
+    
     private func resetUserDefaults() {
         UserDefaults.standard.removeObject(forKey: "selectedFileURL")
     }

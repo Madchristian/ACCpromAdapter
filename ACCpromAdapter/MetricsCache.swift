@@ -14,87 +14,105 @@ final class MetricsCache: ObservableObject {
     
     private let logger = Logger(subsystem: "de.cstrube.ACCpromAdapter", category: "MetricsCache")
     
-    /// Vollständiger Prometheus-Output (inklusive # HELP und # TYPE Zeilen).
+    /// Vollständiger Prometheus-Output (als String).
     @Published private(set) var fullMetrics: String = "Noch keine Metriken verfügbar"
-    
-    /// Gefilterte Metriken für die UI, basierend auf einer vordefinierten Liste.
+    /// Gefilterte Metriken (Dictionary) für die UI (optional, falls benötigt).
     @Published private(set) var filteredMetrics: [String: String] = [:]
+    /// Fortschrittswert von 0.0 bis 1.0, der anzeigt, wie weit der 30-Sekunden-Zyklus fortgeschritten ist.
+    @Published var refreshProgress: Double = 0.0
     
     private var cancellable: AnyCancellable?
     private let analyzer: AssetCacheAnalyzing
     
-    /// Wichtige Schlüssel (im vollständigen Output, inkl. "acc_" Präfix), die in der UI angezeigt werden sollen.
-    private let importantKeys: Set<String> = [
-        "acc_zrequestsfromclient",
-        "acc_zrepliesfromorigintoclient",
-        "acc_zbytesfromcachetoclient",
-        "acc_zbytesfromorigintoclient",
-        "acc_zbytesdropped",
-        "acc_zcreationdate"
-    ]
+    /// 30-Sekunden Intervall für die Aktualisierung
+    private let refreshInterval: TimeInterval = 30.0
+    /// Startzeit des aktuellen Zyklus
+    private var startTime: Date = Date()
     
-    // Initialisierung: Sofortiges Update und periodische Aktualisierung alle 30 Sekunden
     private init(analyzer: AssetCacheAnalyzing = AssetCacheAnalyzer()) {
         self.analyzer = analyzer
-        forceUpdateMetrics() // Erste Aktualisierung sofort
-        startAutoUpdate()    // Danach periodisch alle 30 Sekunden
+        // Sofortige Initial-Aktualisierung
+        forceUpdateMetrics()
+        // Starte den Timer, der sowohl den Fortschritt als auch die Metrikenaktualisierung steuert
+        startAutoUpdate()
     }
     
-    /// Starte den Timer für regelmäßige Aktualisierungen
+    /// Startet einen kontinuierlichen Timer, der alle 0,1 Sekunden den Fortschritt aktualisiert und alle 30 Sekunden ein Update auslöst.
     private func startAutoUpdate() {
-        logger.log("Starte periodische Metriken-Aktualisierung")
-        cancellable = Timer.publish(every: 30, on: .main, in: .common)
+        logger.log("Starte kontinuierlichen Timer für Metriken-Aktualisierung und Fortschritt")
+        cancellable = Timer.publish(every: 0.1, on: .main, in: .common)
             .autoconnect()
-            .sink { [weak self] _ in
-                self?.updateMetrics()
+            .sink { [weak self] currentTime in
+                guard let self = self else { return }
+                let elapsed = currentTime.timeIntervalSince(self.startTime)
+                // Aktualisiere den Fortschritt (zwischen 0.0 und 1.0)
+                self.refreshProgress = min(elapsed / self.refreshInterval, 1.0)
+                // Wenn das Intervall erreicht ist, aktualisiere die Metriken und setze den Timer zurück
+                if elapsed >= self.refreshInterval {
+                    self.updateMetrics()
+                    self.startTime = currentTime
+                }
             }
     }
     
     /// Aktualisiert den Cache, indem der Analyzer aufgerufen wird.
     private func updateMetrics() {
-        logger.log("Hintergrund-Update der Metriken gestartet")
+        logger.log("Aktualisiere Metriken (UpdateMetrics) – Zyklus abgeschlossen")
         let result = analyzer.analyzeMetrics()
         switch result {
         case .success(let output):
-            // Speichere den vollständigen Output
             DispatchQueue.main.async {
                 self.fullMetrics = output
-                // Parse den kompletten Output in ein Dictionary
                 let allMetrics = self.parseMetrics(output)
-                // Filtere die Metriken für die UI basierend auf der wichtigen Key-Liste
-                self.filteredMetrics = allMetrics.filter { self.importantKeys.contains($0.key) }
+                // Filtere nach wichtigen Metriken (optional)
+                self.filteredMetrics = allMetrics.filter { key, _ in
+                    ["acc_zrequestsfromclient",
+                     "acc_zrepliesfromorigintoclient",
+                     "acc_zbytesfromcachetoclient",
+                     "acc_zbytesfromorigintoclient",
+                     "acc_zbytesdropped",
+                     "acc_zcreationdate"].contains(key)
+                }
             }
-            logger.log("Metriken aktualisiert")
+            logger.log("Metriken erfolgreich aktualisiert")
         case .failure(let error):
             logger.error("Fehler beim Aktualisieren der Metriken: \(error.localizedDescription, privacy: .public)")
         }
     }
     
-    /// Führt eine synchronisierte Aktualisierung durch und gibt das Result zurück.
+    /// Führt eine sofortige, synchronisierte Aktualisierung durch.
     func forceUpdateMetrics() -> Result<String, Error> {
-        logger.log("Führe sofortige Metriken-Aktualisierung aus")
+        logger.log("Führe forceUpdateMetrics aus")
         let result = analyzer.analyzeMetrics()
         switch result {
         case .success(let output):
             DispatchQueue.main.async {
                 self.fullMetrics = output
                 let allMetrics = self.parseMetrics(output)
-                self.filteredMetrics = allMetrics.filter { self.importantKeys.contains($0.key) }
+                self.filteredMetrics = allMetrics.filter { key, _ in
+                    ["acc_zrequestsfromclient",
+                     "acc_zrepliesfromorigintoclient",
+                     "acc_zbytesfromcachetoclient",
+                     "acc_zbytesfromorigintoclient",
+                     "acc_zbytesdropped",
+                     "acc_zcreationdate"].contains(key)
+                }
             }
-            logger.log("Sofortige Metriken-Aktualisierung erfolgreich")
+            logger.log("forceUpdateMetrics erfolgreich")
             return .success(output)
         case .failure(let error):
-            logger.error("Fehler bei der sofortigen Aktualisierung: \(error.localizedDescription, privacy: .public)")
+            logger.error("forceUpdateMetrics Fehler: \(error.localizedDescription, privacy: .public)")
             return .failure(error)
         }
     }
     
-    /// Parser für den vollständigen Prometheus-Output: Erzeugt ein Dictionary, in dem Zeilen, die nicht mit '#' beginnen, als "key value" interpretiert werden.
+    /// Parser für den vollständigen Prometheus-Output. Erwartet Zeilen im Format:
+    ///   key value
+    /// Kommentarzeilen (mit "#") werden übersprungen.
     private func parseMetrics(_ string: String) -> [String: String] {
         var dict = [String: String]()
         let lines = string.split(separator: "\n")
         for line in lines {
-            // Kommentarzeilen überspringen
             if line.trimmingCharacters(in: .whitespaces).hasPrefix("#") { continue }
             let components = line.split(separator: " ", maxSplits: 1, omittingEmptySubsequences: true)
             if components.count == 2 {
