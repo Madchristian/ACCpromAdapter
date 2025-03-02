@@ -1,0 +1,340 @@
+{
+  "" : {
+    "const-values" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOCore-master.swiftconstvalues",
+    "dependencies" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOCore-master.d",
+    "diagnostics" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOCore-master.dia",
+    "emit-module-dependencies" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOCore-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOCore-master-emit-module.dia",
+    "swift-dependencies" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOCore-master.swiftdeps"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/AddressedEnvelope.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/AddressedEnvelope.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/AddressedEnvelope.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/AddressedEnvelope.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/AsyncAwaitSupport.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/AsyncAwaitSupport.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/AsyncAwaitSupport.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/AsyncAwaitSupport.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/AsyncChannel/AsyncChannel.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/AsyncChannel.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/AsyncChannel.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/AsyncChannel.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/AsyncChannel/AsyncChannelHandler.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/AsyncChannelHandler.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/AsyncChannelHandler.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/AsyncChannelHandler.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/AsyncChannel/AsyncChannelInboundStream.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/AsyncChannelInboundStream.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/AsyncChannelInboundStream.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/AsyncChannelInboundStream.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/AsyncChannel/AsyncChannelOutboundWriter.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/AsyncChannelOutboundWriter.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/AsyncChannelOutboundWriter.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/AsyncChannelOutboundWriter.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/AsyncSequences/NIOAsyncSequenceProducer.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOAsyncSequenceProducer.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOAsyncSequenceProducer.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOAsyncSequenceProducer.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/AsyncSequences/NIOAsyncSequenceProducerStrategies.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOAsyncSequenceProducerStrategies.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOAsyncSequenceProducerStrategies.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOAsyncSequenceProducerStrategies.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/AsyncSequences/NIOAsyncWriter.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOAsyncWriter.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOAsyncWriter.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOAsyncWriter.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/AsyncSequences/NIOThrowingAsyncSequenceProducer.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOThrowingAsyncSequenceProducer.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOThrowingAsyncSequenceProducer.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOThrowingAsyncSequenceProducer.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/BSDSocketAPI.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/BSDSocketAPI.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/BSDSocketAPI.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/BSDSocketAPI.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/ByteBuffer-aux.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ByteBuffer-aux.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ByteBuffer-aux.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ByteBuffer-aux.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/ByteBuffer-binaryEncodedLengthPrefix.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ByteBuffer-binaryEncodedLengthPrefix.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ByteBuffer-binaryEncodedLengthPrefix.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ByteBuffer-binaryEncodedLengthPrefix.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/ByteBuffer-conversions.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ByteBuffer-conversions.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ByteBuffer-conversions.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ByteBuffer-conversions.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/ByteBuffer-core.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ByteBuffer-core.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ByteBuffer-core.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ByteBuffer-core.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/ByteBuffer-hex.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ByteBuffer-hex.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ByteBuffer-hex.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ByteBuffer-hex.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/ByteBuffer-int.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ByteBuffer-int.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ByteBuffer-int.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ByteBuffer-int.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/ByteBuffer-lengthPrefix.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ByteBuffer-lengthPrefix.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ByteBuffer-lengthPrefix.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ByteBuffer-lengthPrefix.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/ByteBuffer-multi-int.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ByteBuffer-multi-int.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ByteBuffer-multi-int.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ByteBuffer-multi-int.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/ByteBuffer-quicBinaryEncodingStrategy.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ByteBuffer-quicBinaryEncodingStrategy.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ByteBuffer-quicBinaryEncodingStrategy.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ByteBuffer-quicBinaryEncodingStrategy.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/ByteBuffer-views.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ByteBuffer-views.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ByteBuffer-views.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ByteBuffer-views.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/Channel.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/Channel.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/Channel.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/Channel.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/ChannelHandler.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ChannelHandler.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ChannelHandler.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ChannelHandler.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/ChannelHandlers.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ChannelHandlers.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ChannelHandlers.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ChannelHandlers.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/ChannelInvoker.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ChannelInvoker.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ChannelInvoker.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ChannelInvoker.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/ChannelOption.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ChannelOption.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ChannelOption.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ChannelOption.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/ChannelPipeline.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ChannelPipeline.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ChannelPipeline.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ChannelPipeline.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/CircularBuffer.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/CircularBuffer.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/CircularBuffer.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/CircularBuffer.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/Codec.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/Codec.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/Codec.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/Codec.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/ConvenienceOptionSupport.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ConvenienceOptionSupport.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ConvenienceOptionSupport.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/ConvenienceOptionSupport.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/DeadChannel.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/DeadChannel.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/DeadChannel.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/DeadChannel.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/DispatchQueue+WithFuture.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/DispatchQueue+WithFuture.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/DispatchQueue+WithFuture.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/DispatchQueue+WithFuture.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/EventLoop+Deprecated.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/EventLoop+Deprecated.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/EventLoop+Deprecated.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/EventLoop+Deprecated.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/EventLoop+SerialExecutor.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/EventLoop+SerialExecutor.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/EventLoop+SerialExecutor.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/EventLoop+SerialExecutor.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/EventLoop.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/EventLoop.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/EventLoop.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/EventLoop.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/EventLoopFuture+AssumeIsolated.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/EventLoopFuture+AssumeIsolated.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/EventLoopFuture+AssumeIsolated.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/EventLoopFuture+AssumeIsolated.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/EventLoopFuture+Deprecated.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/EventLoopFuture+Deprecated.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/EventLoopFuture+Deprecated.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/EventLoopFuture+Deprecated.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/EventLoopFuture+WithEventLoop.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/EventLoopFuture+WithEventLoop.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/EventLoopFuture+WithEventLoop.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/EventLoopFuture+WithEventLoop.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/EventLoopFuture.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/EventLoopFuture.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/EventLoopFuture.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/EventLoopFuture.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/FileDescriptor.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/FileDescriptor.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/FileDescriptor.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/FileDescriptor.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/FileHandle.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/FileHandle.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/FileHandle.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/FileHandle.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/FileRegion.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/FileRegion.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/FileRegion.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/FileRegion.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/GlobalSingletons.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/GlobalSingletons.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/GlobalSingletons.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/GlobalSingletons.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/IO.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/IO.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/IO.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/IO.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/IOData.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/IOData.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/IOData.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/IOData.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/IPProtocol.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/IPProtocol.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/IPProtocol.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/IPProtocol.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/IntegerBitPacking.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/IntegerBitPacking.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/IntegerBitPacking.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/IntegerBitPacking.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/IntegerTypes.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/IntegerTypes.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/IntegerTypes.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/IntegerTypes.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/Interfaces.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/Interfaces.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/Interfaces.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/Interfaces.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/Linux.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/Linux.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/Linux.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/Linux.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/MarkedCircularBuffer.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/MarkedCircularBuffer.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/MarkedCircularBuffer.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/MarkedCircularBuffer.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/MulticastChannel.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/MulticastChannel.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/MulticastChannel.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/MulticastChannel.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/NIOAny.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOAny.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOAny.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOAny.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/NIOCloseOnErrorHandler.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOCloseOnErrorHandler.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOCloseOnErrorHandler.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOCloseOnErrorHandler.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/NIOLoopBound.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOLoopBound.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOLoopBound.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOLoopBound.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/NIOScheduledCallback.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOScheduledCallback.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOScheduledCallback.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOScheduledCallback.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/NIOSendable.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOSendable.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOSendable.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/NIOSendable.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/RecvByteBufferAllocator.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/RecvByteBufferAllocator.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/RecvByteBufferAllocator.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/RecvByteBufferAllocator.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/SingleStepByteToMessageDecoder.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/SingleStepByteToMessageDecoder.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/SingleStepByteToMessageDecoder.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/SingleStepByteToMessageDecoder.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/SocketAddresses.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/SocketAddresses.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/SocketAddresses.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/SocketAddresses.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/SocketOptionProvider.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/SocketOptionProvider.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/SocketOptionProvider.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/SocketOptionProvider.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/SystemCallHelpers.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/SystemCallHelpers.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/SystemCallHelpers.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/SystemCallHelpers.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/TimeAmount+Duration.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/TimeAmount+Duration.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/TimeAmount+Duration.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/TimeAmount+Duration.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/TypeAssistedChannelHandler.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/TypeAssistedChannelHandler.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/TypeAssistedChannelHandler.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/TypeAssistedChannelHandler.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/UniversalBootstrapSupport.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/UniversalBootstrapSupport.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/UniversalBootstrapSupport.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/UniversalBootstrapSupport.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOCore/Utilities.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/Utilities.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/Utilities.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOCore.build/Objects-normal/x86_64/Utilities.o"
+  }
+}

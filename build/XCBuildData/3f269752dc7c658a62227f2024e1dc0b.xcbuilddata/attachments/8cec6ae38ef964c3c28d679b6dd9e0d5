@@ -1,0 +1,18 @@
+{
+  "" : {
+    "diagnostics" : "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/build/ACCpromAdapter.build/Debug/ACCpromAdapterDaemon.build/Objects-normal/x86_64/ACCpromAdapterDaemon-master.dia",
+    "emit-module-dependencies" : "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/build/ACCpromAdapter.build/Debug/ACCpromAdapterDaemon.build/Objects-normal/x86_64/ACCpromAdapterDaemon-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/build/ACCpromAdapter.build/Debug/ACCpromAdapterDaemon.build/Objects-normal/x86_64/ACCpromAdapterDaemon-master-emit-module.dia",
+    "swift-dependencies" : "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/build/ACCpromAdapter.build/Debug/ACCpromAdapterDaemon.build/Objects-normal/x86_64/ACCpromAdapterDaemon-master.swiftdeps"
+  },
+  "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/ACCpromAdapterDaemon/main.swift" : {
+    "const-values" : "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/build/ACCpromAdapter.build/Debug/ACCpromAdapterDaemon.build/Objects-normal/x86_64/main.swiftconstvalues",
+    "dependencies" : "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/build/ACCpromAdapter.build/Debug/ACCpromAdapterDaemon.build/Objects-normal/x86_64/main.d",
+    "diagnostics" : "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/build/ACCpromAdapter.build/Debug/ACCpromAdapterDaemon.build/Objects-normal/x86_64/main.dia",
+    "index-unit-output-path" : "/ACCpromAdapter.build/Debug/ACCpromAdapterDaemon.build/Objects-normal/x86_64/main.o",
+    "llvm-bc" : "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/build/ACCpromAdapter.build/Debug/ACCpromAdapterDaemon.build/Objects-normal/x86_64/main.bc",
+    "object" : "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/build/ACCpromAdapter.build/Debug/ACCpromAdapterDaemon.build/Objects-normal/x86_64/main.o",
+    "swift-dependencies" : "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/build/ACCpromAdapter.build/Debug/ACCpromAdapterDaemon.build/Objects-normal/x86_64/main.swiftdeps",
+    "swiftmodule" : "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/build/ACCpromAdapter.build/Debug/ACCpromAdapterDaemon.build/Objects-normal/x86_64/main~partial.swiftmodule"
+  }
+}

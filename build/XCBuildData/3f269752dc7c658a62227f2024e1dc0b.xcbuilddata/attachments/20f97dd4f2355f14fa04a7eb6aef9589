@@ -1,0 +1,18 @@
+{
+  "" : {
+    "diagnostics" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/_NIOBase64.build/Objects-normal/x86_64/_NIOBase64-master.dia",
+    "emit-module-dependencies" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/_NIOBase64.build/Objects-normal/x86_64/_NIOBase64-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/_NIOBase64.build/Objects-normal/x86_64/_NIOBase64-master-emit-module.dia",
+    "swift-dependencies" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/_NIOBase64.build/Objects-normal/x86_64/_NIOBase64-master.swiftdeps"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/_NIOBase64/Base64.swift" : {
+    "const-values" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/_NIOBase64.build/Objects-normal/x86_64/Base64.swiftconstvalues",
+    "dependencies" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/_NIOBase64.build/Objects-normal/x86_64/Base64.d",
+    "diagnostics" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/_NIOBase64.build/Objects-normal/x86_64/Base64.dia",
+    "index-unit-output-path" : "/swift-nio.build/Debug/_NIOBase64.build/Objects-normal/x86_64/Base64.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/_NIOBase64.build/Objects-normal/x86_64/Base64.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/_NIOBase64.build/Objects-normal/x86_64/Base64.o",
+    "swift-dependencies" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/_NIOBase64.build/Objects-normal/x86_64/Base64.swiftdeps",
+    "swiftmodule" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/_NIOBase64.build/Objects-normal/x86_64/Base64~partial.swiftmodule"
+  }
+}

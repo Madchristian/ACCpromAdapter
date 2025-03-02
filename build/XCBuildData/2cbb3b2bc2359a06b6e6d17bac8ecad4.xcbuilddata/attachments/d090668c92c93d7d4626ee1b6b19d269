@@ -1,0 +1,40 @@
+{
+  "" : {
+    "const-values" : "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/build/ACCpromAdapter.build/Release/ACCpromAdapter.build/Objects-normal/x86_64/ACCpromAdapter-master.swiftconstvalues",
+    "dependencies" : "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/build/ACCpromAdapter.build/Release/ACCpromAdapter.build/Objects-normal/x86_64/ACCpromAdapter-master.d",
+    "diagnostics" : "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/build/ACCpromAdapter.build/Release/ACCpromAdapter.build/Objects-normal/x86_64/ACCpromAdapter-master.dia",
+    "emit-module-dependencies" : "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/build/ACCpromAdapter.build/Release/ACCpromAdapter.build/Objects-normal/x86_64/ACCpromAdapter-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/build/ACCpromAdapter.build/Release/ACCpromAdapter.build/Objects-normal/x86_64/ACCpromAdapter-master-emit-module.dia",
+    "swift-dependencies" : "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/build/ACCpromAdapter.build/Release/ACCpromAdapter.build/Objects-normal/x86_64/ACCpromAdapter-master.swiftdeps"
+  },
+  "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/ACCpromAdapter/ACCpromAdapterApp.swift" : {
+    "index-unit-output-path" : "/ACCpromAdapter.build/Release/ACCpromAdapter.build/Objects-normal/x86_64/ACCpromAdapterApp.o",
+    "llvm-bc" : "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/build/ACCpromAdapter.build/Release/ACCpromAdapter.build/Objects-normal/x86_64/ACCpromAdapterApp.bc",
+    "object" : "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/build/ACCpromAdapter.build/Release/ACCpromAdapter.build/Objects-normal/x86_64/ACCpromAdapterApp.o"
+  },
+  "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/ACCpromAdapter/AppDelegate.swift" : {
+    "index-unit-output-path" : "/ACCpromAdapter.build/Release/ACCpromAdapter.build/Objects-normal/x86_64/AppDelegate.o",
+    "llvm-bc" : "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/build/ACCpromAdapter.build/Release/ACCpromAdapter.build/Objects-normal/x86_64/AppDelegate.bc",
+    "object" : "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/build/ACCpromAdapter.build/Release/ACCpromAdapter.build/Objects-normal/x86_64/AppDelegate.o"
+  },
+  "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/ACCpromAdapter/ContentView.swift" : {
+    "index-unit-output-path" : "/ACCpromAdapter.build/Release/ACCpromAdapter.build/Objects-normal/x86_64/ContentView.o",
+    "llvm-bc" : "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/build/ACCpromAdapter.build/Release/ACCpromAdapter.build/Objects-normal/x86_64/ContentView.bc",
+    "object" : "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/build/ACCpromAdapter.build/Release/ACCpromAdapter.build/Objects-normal/x86_64/ContentView.o"
+  },
+  "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/ACCpromAdapter/MetricsFetcher.swift" : {
+    "index-unit-output-path" : "/ACCpromAdapter.build/Release/ACCpromAdapter.build/Objects-normal/x86_64/MetricsFetcher.o",
+    "llvm-bc" : "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/build/ACCpromAdapter.build/Release/ACCpromAdapter.build/Objects-normal/x86_64/MetricsFetcher.bc",
+    "object" : "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/build/ACCpromAdapter.build/Release/ACCpromAdapter.build/Objects-normal/x86_64/MetricsFetcher.o"
+  },
+  "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/ACCpromAdapter/ServiceControl.swift" : {
+    "index-unit-output-path" : "/ACCpromAdapter.build/Release/ACCpromAdapter.build/Objects-normal/x86_64/ServiceControl.o",
+    "llvm-bc" : "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/build/ACCpromAdapter.build/Release/ACCpromAdapter.build/Objects-normal/x86_64/ServiceControl.bc",
+    "object" : "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/build/ACCpromAdapter.build/Release/ACCpromAdapter.build/Objects-normal/x86_64/ServiceControl.o"
+  },
+  "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/build/ACCpromAdapter.build/Release/ACCpromAdapter.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/ACCpromAdapter.build/Release/ACCpromAdapter.build/Objects-normal/x86_64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/build/ACCpromAdapter.build/Release/ACCpromAdapter.build/Objects-normal/x86_64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/build/ACCpromAdapter.build/Release/ACCpromAdapter.build/Objects-normal/x86_64/GeneratedAssetSymbols.o"
+  }
+}

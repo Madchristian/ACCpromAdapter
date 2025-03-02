@@ -1,0 +1,4 @@
+module CNIOWASI {
+umbrella header "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/CNIOWASI/include/CNIOWASI.h"
+export *
+}

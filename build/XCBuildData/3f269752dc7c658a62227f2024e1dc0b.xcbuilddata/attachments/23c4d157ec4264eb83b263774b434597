@@ -1,0 +1,58 @@
+{
+  "" : {
+    "diagnostics" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/NIOConcurrencyHelpers-master.dia",
+    "emit-module-dependencies" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/NIOConcurrencyHelpers-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/NIOConcurrencyHelpers-master-emit-module.dia",
+    "swift-dependencies" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/NIOConcurrencyHelpers-master.swiftdeps"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOConcurrencyHelpers/NIOAtomic.swift" : {
+    "const-values" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/NIOAtomic.swiftconstvalues",
+    "dependencies" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/NIOAtomic.d",
+    "diagnostics" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/NIOAtomic.dia",
+    "index-unit-output-path" : "/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/NIOAtomic.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/NIOAtomic.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/NIOAtomic.o",
+    "swift-dependencies" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/NIOAtomic.swiftdeps",
+    "swiftmodule" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/NIOAtomic~partial.swiftmodule"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOConcurrencyHelpers/NIOLock.swift" : {
+    "const-values" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/NIOLock.swiftconstvalues",
+    "dependencies" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/NIOLock.d",
+    "diagnostics" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/NIOLock.dia",
+    "index-unit-output-path" : "/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/NIOLock.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/NIOLock.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/NIOLock.o",
+    "swift-dependencies" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/NIOLock.swiftdeps",
+    "swiftmodule" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/NIOLock~partial.swiftmodule"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOConcurrencyHelpers/NIOLockedValueBox.swift" : {
+    "const-values" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/NIOLockedValueBox.swiftconstvalues",
+    "dependencies" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/NIOLockedValueBox.d",
+    "diagnostics" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/NIOLockedValueBox.dia",
+    "index-unit-output-path" : "/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/NIOLockedValueBox.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/NIOLockedValueBox.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/NIOLockedValueBox.o",
+    "swift-dependencies" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/NIOLockedValueBox.swiftdeps",
+    "swiftmodule" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/NIOLockedValueBox~partial.swiftmodule"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOConcurrencyHelpers/atomics.swift" : {
+    "const-values" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/atomics.swiftconstvalues",
+    "dependencies" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/atomics.d",
+    "diagnostics" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/atomics.dia",
+    "index-unit-output-path" : "/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/atomics.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/atomics.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/atomics.o",
+    "swift-dependencies" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/atomics.swiftdeps",
+    "swiftmodule" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/atomics~partial.swiftmodule"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/Sources/NIOConcurrencyHelpers/lock.swift" : {
+    "const-values" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/lock.swiftconstvalues",
+    "dependencies" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/lock.d",
+    "diagnostics" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/lock.dia",
+    "index-unit-output-path" : "/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/lock.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/lock.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/lock.o",
+    "swift-dependencies" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/lock.swiftdeps",
+    "swiftmodule" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Debug/NIOConcurrencyHelpers.build/Objects-normal/arm64/lock~partial.swiftmodule"
+  }
+}

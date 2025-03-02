@@ -1,0 +1,7 @@
+version: "Apple Swift version 6.0.3 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)"
+options: "b8ad8fb7131d4901a8fff61dac3d0bd75cb2133aef06b0f592430d45f2e5956c"
+build_start_time: [1740848505, 894320000]
+build_end_time: [1740848512, 293533000]
+inputs:
+  ? "/Users/christian/Library/Mobile Documents/com~apple~CloudDocs/Xcode/ACCpromAdapter/ACCpromAdapter/ACCpromAdapterDaemon/main.swift"
+  : !dirty [1740843697, 449018511]

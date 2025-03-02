@@ -1,0 +1,90 @@
+{
+  "" : {
+    "const-values" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/DequeModule-master.swiftconstvalues",
+    "dependencies" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/DequeModule-master.d",
+    "diagnostics" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/DequeModule-master.dia",
+    "emit-module-dependencies" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/DequeModule-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/DequeModule-master-emit-module.dia",
+    "swift-dependencies" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/DequeModule-master.swiftdeps"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/Sources/DequeModule/Deque+Codable.swift" : {
+    "index-unit-output-path" : "/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque+Codable.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque+Codable.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque+Codable.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/Sources/DequeModule/Deque+Collection.swift" : {
+    "index-unit-output-path" : "/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque+Collection.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque+Collection.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque+Collection.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/Sources/DequeModule/Deque+CustomReflectable.swift" : {
+    "index-unit-output-path" : "/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque+CustomReflectable.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque+CustomReflectable.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque+CustomReflectable.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/Sources/DequeModule/Deque+Descriptions.swift" : {
+    "index-unit-output-path" : "/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque+Descriptions.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque+Descriptions.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque+Descriptions.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/Sources/DequeModule/Deque+Equatable.swift" : {
+    "index-unit-output-path" : "/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque+Equatable.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque+Equatable.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque+Equatable.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/Sources/DequeModule/Deque+ExpressibleByArrayLiteral.swift" : {
+    "index-unit-output-path" : "/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque+ExpressibleByArrayLiteral.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque+ExpressibleByArrayLiteral.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque+ExpressibleByArrayLiteral.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/Sources/DequeModule/Deque+Extras.swift" : {
+    "index-unit-output-path" : "/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque+Extras.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque+Extras.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque+Extras.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/Sources/DequeModule/Deque+Hashable.swift" : {
+    "index-unit-output-path" : "/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque+Hashable.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque+Hashable.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque+Hashable.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/Sources/DequeModule/Deque+Testing.swift" : {
+    "index-unit-output-path" : "/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque+Testing.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque+Testing.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque+Testing.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/Sources/DequeModule/Deque._Storage.swift" : {
+    "index-unit-output-path" : "/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque._Storage.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque._Storage.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque._Storage.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/Sources/DequeModule/Deque._UnsafeHandle.swift" : {
+    "index-unit-output-path" : "/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque._UnsafeHandle.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque._UnsafeHandle.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque._UnsafeHandle.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/Sources/DequeModule/Deque.swift" : {
+    "index-unit-output-path" : "/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/Deque.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/Sources/DequeModule/_DequeBuffer.swift" : {
+    "index-unit-output-path" : "/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/_DequeBuffer.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/_DequeBuffer.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/_DequeBuffer.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/Sources/DequeModule/_DequeBufferHeader.swift" : {
+    "index-unit-output-path" : "/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/_DequeBufferHeader.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/_DequeBufferHeader.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/_DequeBufferHeader.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/Sources/DequeModule/_DequeSlot.swift" : {
+    "index-unit-output-path" : "/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/_DequeSlot.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/_DequeSlot.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/_DequeSlot.o"
+  },
+  "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/Sources/DequeModule/_UnsafeWrappedBuffer.swift" : {
+    "index-unit-output-path" : "/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/_UnsafeWrappedBuffer.o",
+    "llvm-bc" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/_UnsafeWrappedBuffer.bc",
+    "object" : "/Users/christian/Library/Developer/Xcode/DerivedData/ACCpromAdapter-bmkdfqszbdsufncslngkmkbryyfm/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/DequeModule.build/Objects-normal/arm64/_UnsafeWrappedBuffer.o"
+  }
+}
