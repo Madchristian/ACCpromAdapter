@@ -9,12 +9,10 @@ import Foundation
 import os
 import SQLite3
 
-/// Protokoll, das den Analyzer beschreibt.
 protocol AssetCacheAnalyzing {
     func analyzeMetrics() -> Result<String, Error>
 }
 
-/// Fehler, die beim Abruf oder Parsing auftreten können.
 enum AssetCacheAnalyzerError: Error, LocalizedError {
     case fileURLNotFound
     case fileNotReadable(String)
@@ -41,8 +39,6 @@ enum AssetCacheAnalyzerError: Error, LocalizedError {
     }
 }
 
-/// Liest die Metrics.db aus, führt SQL-Abfragen auf der Tabelle "ZMETRIC" aus,
-/// parst die Ergebnisse und gibt sie als Prometheus‑Metriken zurück.
 class AssetCacheAnalyzer: AssetCacheAnalyzing {
     private let logger: Logger
     
@@ -53,7 +49,6 @@ class AssetCacheAnalyzer: AssetCacheAnalyzing {
     func analyzeMetrics() -> Result<String, Error> {
         logger.log("Starte Lesevorgang der Metrics.db")
         
-        // Hole die gespeicherte Datei-URL aus UserDefaults
         guard let urlString = UserDefaults.standard.string(forKey: "selectedFileURL"),
               let url = URL(string: urlString) else {
             logger.error("Keine gespeicherte Datei-URL gefunden.")
@@ -61,7 +56,6 @@ class AssetCacheAnalyzer: AssetCacheAnalyzing {
         }
         
         logger.log("Gespeicherte Datei-URL gefunden: \(url.path, privacy: .public)")
-        // Prüfe, ob die Datei lesbar ist
         if !FileManager.default.isReadableFile(atPath: url.path) {
             logger.error("Datei \(url.path, privacy: .public) ist NICHT lesbar.")
             return .failure(AssetCacheAnalyzerError.fileNotReadable("Pfad: \(url.path)"))
@@ -78,7 +72,6 @@ class AssetCacheAnalyzer: AssetCacheAnalyzing {
             sqlite3_close(db)
         }
         
-        // Ermittele die Spaltennamen der Tabelle "ZMETRIC"
         var pragmaStmt: OpaquePointer?
         let pragmaQuery = "PRAGMA table_info(ZMETRIC)"
         guard sqlite3_prepare_v2(db, pragmaQuery, -1, &pragmaStmt, nil) == SQLITE_OK else {
@@ -102,7 +95,6 @@ class AssetCacheAnalyzer: AssetCacheAnalyzing {
             return .failure(AssetCacheAnalyzerError.noColumns)
         }
         
-        // Wähle den neuesten Datensatz
         let query = "SELECT " + columns.joined(separator: ", ") + " FROM ZMETRIC ORDER BY ZCREATIONDATE DESC LIMIT 1"
         var stmt: OpaquePointer?
         guard sqlite3_prepare_v2(db, query, -1, &stmt, nil) == SQLITE_OK else {
@@ -119,10 +111,8 @@ class AssetCacheAnalyzer: AssetCacheAnalyzing {
             return .failure(AssetCacheAnalyzerError.noData)
         }
         
-        // Parse den Datensatz in Prometheus-Metriken
+        // Erzeuge den Prometheus-Output, inklusive HELP/TYPE Zeilen.
         var metricsLines = [String]()
-        var currentParentKey: String? = nil
-        
         for (index, colName) in columns.enumerated() {
             let colType = sqlite3_column_type(stmt, Int32(index))
             var valueText = ""
@@ -144,17 +134,13 @@ class AssetCacheAnalyzer: AssetCacheAnalyzing {
             }
             
             let trimmedKey = colName.trimmingCharacters(in: .whitespaces)
-            
-            // Für untergeordnete Zeilen (falls im DB-Format vorhanden) könntest du Logik einbauen,
-            // hier nehmen wir an, dass alle Spalten oberflächlich sind.
             let metricName = "acc_\(trimmedKey.lowercased().replacingOccurrences(of: " ", with: "_"))"
-            // Zerlege den Wert, um eventuelle Einheiten zu erfassen:
-            let tokens = valueText.split(separator: " ")
+            let tokens = valueText.split(separator: " ", maxSplits: 1, omittingEmptySubsequences: true)
             let numericValue = tokens.first.map { String($0) } ?? valueText
             let unit = tokens.count >= 2 ? String(tokens[1]) : ""
             let helpText = unit.isEmpty ? trimmedKey : "\(trimmedKey) (Einheit: \(unit))"
             
-            // Für boolesche Werte mappe true/false auf 1/0
+            // Für boolesche Werte: true/false -> 1/0
             let finalValue: String
             if valueText.lowercased() == "true" {
                 finalValue = "1"

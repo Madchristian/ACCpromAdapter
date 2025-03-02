@@ -13,21 +13,36 @@ final class MetricsCache: ObservableObject {
     static let shared = MetricsCache()
     
     private let logger = Logger(subsystem: "de.cstrube.ACCpromAdapter", category: "MetricsCache")
-    @Published private(set) var metrics: [String: String] = [:]
+    
+    /// Vollständiger Prometheus-Output (inklusive # HELP und # TYPE Zeilen).
+    @Published private(set) var fullMetrics: String = "Noch keine Metriken verfügbar"
+    
+    /// Gefilterte Metriken für die UI, basierend auf einer vordefinierten Liste.
+    @Published private(set) var filteredMetrics: [String: String] = [:]
+    
     private var cancellable: AnyCancellable?
     private let analyzer: AssetCacheAnalyzing
     
-    // Initialisierung: Automatische Aktualisierung alle 30 Sekunden
+    /// Wichtige Schlüssel (im vollständigen Output, inkl. "acc_" Präfix), die in der UI angezeigt werden sollen.
+    private let importantKeys: Set<String> = [
+        "acc_zrequestsfromclient",
+        "acc_zrepliesfromorigintoclient",
+        "acc_zbytesfromcachetoclient",
+        "acc_zbytesfromorigintoclient",
+        "acc_zbytesdropped",
+        "acc_zcreationdate"
+    ]
+    
+    // Initialisierung: Sofortiges Update und periodische Aktualisierung alle 30 Sekunden
     private init(analyzer: AssetCacheAnalyzing = AssetCacheAnalyzer()) {
         self.analyzer = analyzer
         forceUpdateMetrics() // Erste Aktualisierung sofort
         startAutoUpdate()    // Danach periodisch alle 30 Sekunden
     }
     
-    /// Starte den Timer für regelmäßige Updates
+    /// Starte den Timer für regelmäßige Aktualisierungen
     private func startAutoUpdate() {
         logger.log("Starte periodische Metriken-Aktualisierung")
-        // Nutze den Main-RunLoop; der Timer wird dann in der Sink-Closure asynchronen Code starten.
         cancellable = Timer.publish(every: 30, on: .main, in: .common)
             .autoconnect()
             .sink { [weak self] _ in
@@ -35,15 +50,19 @@ final class MetricsCache: ObservableObject {
             }
     }
     
-    /// Aktualisiert den Cache im Hintergrund.
+    /// Aktualisiert den Cache, indem der Analyzer aufgerufen wird.
     private func updateMetrics() {
         logger.log("Hintergrund-Update der Metriken gestartet")
         let result = analyzer.analyzeMetrics()
         switch result {
         case .success(let output):
-            let parsed = self.parseMetrics(output)
+            // Speichere den vollständigen Output
             DispatchQueue.main.async {
-                self.metrics = parsed
+                self.fullMetrics = output
+                // Parse den kompletten Output in ein Dictionary
+                let allMetrics = self.parseMetrics(output)
+                // Filtere die Metriken für die UI basierend auf der wichtigen Key-Liste
+                self.filteredMetrics = allMetrics.filter { self.importantKeys.contains($0.key) }
             }
             logger.log("Metriken aktualisiert")
         case .failure(let error):
@@ -57,9 +76,10 @@ final class MetricsCache: ObservableObject {
         let result = analyzer.analyzeMetrics()
         switch result {
         case .success(let output):
-            let parsed = parseMetrics(output)
             DispatchQueue.main.async {
-                self.metrics = parsed
+                self.fullMetrics = output
+                let allMetrics = self.parseMetrics(output)
+                self.filteredMetrics = allMetrics.filter { self.importantKeys.contains($0.key) }
             }
             logger.log("Sofortige Metriken-Aktualisierung erfolgreich")
             return .success(output)
@@ -69,7 +89,7 @@ final class MetricsCache: ObservableObject {
         }
     }
     
-    /// Parser für Prometheus-Output (angenommen, die Ausgabe ist flach, ohne verschachtelte Zeilen).
+    /// Parser für den vollständigen Prometheus-Output: Erzeugt ein Dictionary, in dem Zeilen, die nicht mit '#' beginnen, als "key value" interpretiert werden.
     private func parseMetrics(_ string: String) -> [String: String] {
         var dict = [String: String]()
         let lines = string.split(separator: "\n")

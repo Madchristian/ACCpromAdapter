@@ -78,11 +78,6 @@ struct ContentView: View {
                 }
                 
                 HStack(spacing: 20) {
-                    Button("Aktualisieren") {
-                        fetcher.fetchMetrics()
-                    }
-                    .buttonStyle(LinkButtonStyle())
-                    
                     Button("Reset Defaults") {
                         resetUserDefaults()
                     }

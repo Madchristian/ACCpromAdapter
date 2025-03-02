@@ -97,24 +97,20 @@ final class HTTPHandler: ChannelInboundHandler {
             break
         case .end:
             logger.log("Erhalte Anfrage für /metrics")
-            // Konvertiere das Dictionary in einen String (jeweils "key value"-Zeile)
-            let metricsDict = MetricsCache.shared.metrics
-            let metricsString = metricsDict.map { "\($0.key) \($0.value)" }
-                .joined(separator: "\n")
-            
+            let metrics = MetricsCache.shared.fullMetrics
             let status: HTTPResponseStatus = .ok
             var headers = HTTPHeaders()
             headers.add(name: "Content-Type", value: "text/plain; charset=utf-8")
-            headers.add(name: "Content-Length", value: "\(metricsString.utf8.count)")
+            headers.add(name: "Content-Length", value: "\(metrics.utf8.count)")
             let head = HTTPResponseHead(version: .init(major: 1, minor: 1), status: status, headers: headers)
-            
             context.write(wrapOutboundOut(.head(head)), promise: nil)
-            var buffer = context.channel.allocator.buffer(capacity: metricsString.utf8.count)
-            buffer.writeString(metricsString)
+            var buffer = context.channel.allocator.buffer(capacity: metrics.utf8.count)
+            buffer.writeString(metrics)
             context.write(wrapOutboundOut(.body(.byteBuffer(buffer))), promise: nil)
             context.writeAndFlush(wrapOutboundOut(.end(nil)), promise: nil)
         }
     }
+    
     
     private func sendNotFound(context: ChannelHandlerContext, request: HTTPRequestHead) {
         var headers = HTTPHeaders()

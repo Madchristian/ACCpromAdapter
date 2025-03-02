@@ -26,13 +26,13 @@ class MetricsFetcher: ObservableObject {
             .store(in: &cancellables)
     }
 
-    /// Verbindet sich mit `MetricsCache`, um automatisch Updates zu erhalten.
+    /// Abonniert den gefilterten Metrik-Output aus MetricsCache.
     private func bindToMetricsCache() {
-        MetricsCache.shared.$metrics
+        MetricsCache.shared.$filteredMetrics
             .receive(on: DispatchQueue.main)
             .sink { [weak self] updatedMetrics in
                 self?.metrics = updatedMetrics
-                self?.logger.log("Metriken für UI aktualisiert")
+                self?.logger.log("UI-Metriken aktualisiert")
             }
             .store(in: &cancellables)
     }
