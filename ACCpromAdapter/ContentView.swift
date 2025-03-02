@@ -8,11 +8,9 @@ import SwiftUI
 import Combine
 
 struct ContentView: View {
+    @ObservedObject var fetcher: MetricsFetcher
     @ObservedObject var metricsCache = MetricsCache.shared
     
-    @ObservedObject var fetcher: MetricsFetcher
-    
-    // Verwende die gleichen wichtigen Keys für die UI-Anzeige
     private let importantKeys = [
         "acc_zrequestsfromclient",
         "acc_zrepliesfromorigintoclient",
@@ -24,12 +22,23 @@ struct ContentView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
+            // Überschrift und Indikator
+            HStack {
+                Text("Cache Metrics")
+                    .font(.system(size: 18, weight: .bold))
+                Spacer()
+                // Zeige den Indikator: grün = externer Daemon, rot = lokale DB
+                Circle()
+                    .fill(fetcher.serverReady ? Color.green : Color.red)
+                    .frame(width: 10, height: 10)
+                    .overlay(
+                        Circle().stroke(Color.primary, lineWidth: 0.5)
+                    )
+                    .help(fetcher.serverReady ? "Externer HTTP-Modus" : "Lokaler DB-Modus")
+            }
+            .padding(.top, 10)
             
-            // Titel
-            Text("Cache Metrics")
-                .font(.system(size: 18, weight: .bold))
-                .padding(.top, 10)
-            
+            // Metrikenanzeige
             if fetcher.metrics.isEmpty {
                 VStack {
                     ProgressView()
@@ -61,6 +70,7 @@ struct ContentView: View {
                 .cornerRadius(8)
             }
             
+            // Anzeige des letzten Update-Datums (optional)
             HStack {
                 VStack(alignment: .leading, spacing: 2) {
                     Text("Letztes Update der Metriken:")
@@ -75,12 +85,14 @@ struct ContentView: View {
                 Spacer()
             }
             
-            // Fortschrittsbalken, der an MetricsCache.refreshProgress gebunden ist
-            ProgressView(value: metricsCache.refreshProgress)
-                .progressViewStyle(.linear)
-                .tint(.blue)
-                .frame(height: 4)
-                .padding(.bottom, 6)
+            // Fortschrittsbalken (nur für lokalen DB-Modus sinnvoll)
+            if !fetcher.serverReady {
+                ProgressView(value: metricsCache.refreshProgress)
+                    .progressViewStyle(.linear)
+                    .tint(.blue)
+                    .frame(height: 4)
+                    .padding(.bottom, 6)
+            }
             
             Divider()
             
@@ -130,17 +142,17 @@ struct ContentView: View {
         }
         return key.capitalized
     }
-
-    func formattedCreationDate(from timestampString: String) -> String? {
+    
+    private func formattedCreationDate(from timestampString: String) -> String? {
         guard let timestamp = Double(timestampString) else { return nil }
-        // Nutze Apple-Reference-Date (1. Januar 2001) statt Unix-Epoch (1970)
+        // Apple Reference Date: 1. Januar 2001
         let date = Date(timeIntervalSinceReferenceDate: timestamp)
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
         formatter.timeStyle = .short
         return formatter.string(from: date)
     }
-    
+
     private func resetUserDefaults() {
         UserDefaults.standard.removeObject(forKey: "selectedFileURL")
     }
