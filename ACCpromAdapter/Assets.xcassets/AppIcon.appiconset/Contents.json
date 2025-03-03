@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "1024-mac.png",
+      "filename" : "1024-mac 1.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
@@ -35,13 +35,13 @@
       "size" : "16x16"
     },
     {
-      "filename" : "32-mac.png",
+      "filename" : "32-mac 1.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "16x16"
     },
     {
-      "filename" : "32-mac 1.png",
+      "filename" : "32-mac.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "32x32"
@@ -59,31 +59,31 @@
       "size" : "128x128"
     },
     {
-      "filename" : "256-mac.png",
+      "filename" : "256-mac 1.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "128x128"
     },
     {
-      "filename" : "256-mac 1.png",
+      "filename" : "256-mac.png",
       "idiom" : "mac",
       "scale" : "1x",
-      "size" : "256x256"
-    },
-    {
-      "filename" : "512-mac.png",
-      "idiom" : "mac",
-      "scale" : "2x",
       "size" : "256x256"
     },
     {
       "filename" : "512-mac 1.png",
       "idiom" : "mac",
+      "scale" : "2x",
+      "size" : "256x256"
+    },
+    {
+      "filename" : "512-mac.png",
+      "idiom" : "mac",
       "scale" : "1x",
       "size" : "512x512"
     },
     {
-      "filename" : "1024-mac 1.png",
+      "filename" : "1024-mac.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "512x512"

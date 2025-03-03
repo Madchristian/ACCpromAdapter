@@ -1,95 +1,132 @@
-Hier ist eine ausführliche README.md für dein Git-Repository, die dokumentiert, was der ACCpromAdapter macht, welche Technologien verwendet wurden und wie das Projekt strukturiert ist. Die README enthält auch Anweisungen zur Einrichtung und Nutzung.
+# ACCpromAdapter
 
-ACCpromAdapter
+**Version:** 1.0  
+**Author:** Christian Strube  
+**License:** MIT
 
-Version: 1.0
-Autor: Christian Strube
-Lizenz: MIT
+---
 
-📝 Beschreibung
+## 📝 Description
 
-ACCpromAdapter ist eine macOS-Menüleisten-App, die den Apple Content Cache überwacht und die Metriken im Prometheus-Format bereitstellt. Die App liest die Metrics.db aus dem Systemverzeichnis aus und stellt sie über einen integrierten HTTP-Server zur Verfügung. So können die Daten direkt in Grafana oder andere Monitoring-Tools integriert werden.
+ACCPromAdapter is a macOS menu bar application that monitors the Apple Content Cache and provides metrics in Prometheus format. The app reads the Metrics.db file from the system directory and serves the data through an integrated HTTP server, making it easy to integrate with Grafana or other monitoring tools.
 
-🎯 Features
+Additionally, we offer the **ACCPromAdapterDaemon** for headless installations—ideal for servers and headless Mac Minis where the service runs automatically at system startup and collects metrics without requiring a user to log in.
 
-✅ Prometheus-kompatible Metriken
-✅ Leichtgewichtiger HTTP-Server auf Port 9200
-✅ Security-Scoped Bookmarks für Zugriff auf geschützte Dateien
-✅ Menüleisten-App ohne Dock-Icon
-✅ Einfache Konfiguration und automatische Speicherung der Dateiauswahl
-✅ Automatische Aktualisierung der Metriken über Combine
-✅ Option zur Rücksetzung der Einstellungen
+---
 
-🏗️ Architektur
+## 🎯 Features
 
-Das Projekt ist in Swift geschrieben und verwendet SwiftUI für die Menüleiste sowie SwiftNIO für den HTTP-Server.
+- **Prometheus-Compatible Metrics:** All data is output in a standard format that can be directly scraped by Prometheus.
+- **Lightweight HTTP Server:** Runs on port 9200 and serves metrics either via an external daemon or, as a fallback, through an internal server.
+- **Security-Scoped Bookmarks:** Enables access to protected files such as Metrics.db.
+- **Menu Bar Only (No Dock Icon):** The app runs discreetly in the menu bar.
+- **Simple Configuration:** The app saves your file selection once, so you won’t need to choose the file repeatedly.
+- **Automatic Updates:** Metrics are automatically refreshed every 30 seconds using Combine, with a progress indicator showing the update cycle.
+- **Headless Installation:** The ACCPromAdapterDaemon allows administrators to install the service system-wide, ensuring continuous metrics collection even without user login.
 
-🔹 Komponenten:
-    1.    AppDelegate.swift
-    •    Initialisiert die App und prüft, ob der Port 9200 verfügbar ist.
-    •    Verwaltet den Zugriff auf die Metrics.db mithilfe von Security-Scoped Bookmarks.
-    •    Falls keine Datei gespeichert ist, öffnet es einen Dateiauswahldialog.
-    2.    PrometheusServer.swift
-    •    Startet einen HTTP-Server mit SwiftNIO auf Port 9200.
-    •    Liefert Metriken aus dem MetricsCache zurück.
-    •    Verhindert, dass der Server blockiert, indem Metriken im Hintergrund aktualisiert werden.
-    3.    AssetCacheAnalyzer.swift
-    •    Liest die Metrics.db mit SQLite aus.
-    •    Parst die Z-Werte aus der Datenbank und konvertiert sie in ein Prometheus-kompatibles Format.
-    •    Zerlegt Werte mit Einheiten (z. B. MB, GB) in numerische Werte.
-    4.    MetricsFetcher.swift
-    •    Observables mit Combine, um UI-Updates nur auszuführen, wenn Metriken aktualisiert wurden.
-    •    Kümmert sich um das Abrufen und Verarbeiten der Daten für die UI.
-    5.    ContentView.swift
-    •    Die Menüleisten-Oberfläche zur Anzeige der wichtigsten Metriken.
-    •    Enthält Buttons für Safari, Kopieren der URL und Neustarten der Metriken.
-    •    Reset-Funktion für UserDefaults (zum Testen nützlich).
+---
 
-🚀 Installation
-    1.    Projekt klonen
+## 🏗️ Architecture
 
-git clone https://github.com/dein-github/ACCpromAdapter.git
-cd ACCpromAdapter
+The project is written in **Swift** and utilizes:
+- **SwiftUI** for the menu bar interface
+- **SwiftNIO** for the HTTP server
+- **Combine** for automatic updates
+- **SQLite3** for reading the Metrics.db file
 
+**Core Components:**
 
-    2.    Xcode öffnen
+1. **AppDelegate.swift**  
+   - Initializes the app and checks if port 9200 is available.
+   - Manages access to the Metrics.db using Security-Scoped Bookmarks.
+   - Opens a file dialog if no file has been saved yet.
+
+2. **AppInitializer.swift**  
+   - Handles the centralized initialization of the app, deciding whether to use external HTTP metrics or fall back to the local database, and only starts the UI after this process is complete.
+
+3. **PrometheusServer.swift**  
+   - Starts an HTTP server with SwiftNIO on port 9200 that returns metrics from MetricsCache.
+
+4. **AssetCacheAnalyzer.swift**  
+   - Reads the Metrics.db using SQLite and converts the data into Prometheus-compatible output.
+   - Parses numeric values and units (e.g., MB, GB) appropriately.
+
+5. **MetricsCache.swift**  
+   - Periodically updates metrics from the local database (if no external daemon is available) and provides them to the UI.
+
+6. **MetricsFetcher.swift**  
+   - Uses Combine to observe and fetch metrics via HTTP when an external daemon is active.
+
+7. **ContentView.swift**  
+   - The menu bar interface displaying key metrics.
+   - Includes buttons for opening the metrics URL in Safari, copying the URL, resetting defaults, and quitting the app.
+
+---
+
+## 🚀 Installation
+
+1. **Clone the Project:**
+   ```bash
+   git clone https://github.com/your-github/ACCpromAdapter.git
+   cd ACCpromAdapter
+
+    2.    Open in Xcode:
 
 open ACCpromAdapter.xcodeproj
 
 
-    3.    Signatur einrichten (falls nötig)
-    •    In den Xcode Signing & Capabilities die Entwickler-ID eintragen.
-    4.    App starten
-    •    Drücke Cmd + R, um die App zu starten.
+    3.    Set Up Code Signing:
+    •    In Xcode, navigate to “Signing & Capabilities” and enter your Developer ID as needed.
+    4.    Run the App:
+    •    Press Cmd + R to build and run the app.
+    5.    ACCPromAdapterDaemon:
+    •    The installation package ACCPromAdapterDaemon.pkg is available via GitHub Releases or as a direct download on the blog. Install the daemon to use it system-wide.
 
 🔧 Troubleshooting
-
-❌ Kein Zugriff auf die Metrics.db
-    •    Stelle sicher, dass die App in den Systemeinstellungen → Datenschutz & Sicherheit → Festplattenvollzugriff eingetragen ist.
-
-❌ Port 9200 ist blockiert
-    •    Prüfe mit:
+    •    No Access to Metrics.db:
+Make sure the app is granted Full Disk Access in System Preferences → Security & Privacy.
+    •    Port 9200 is Blocked:
+Check with:
 
 lsof -i :9200
 
-Falls ein anderer Prozess den Port belegt:
+If another process is using the port, terminate it with:
 
 kill -9 <PID>
 
 
-
-❌ Keine Metriken in Grafana
-    •    Prüfe, ob die Prometheus-URL korrekt ist:
+    •    No Metrics in Grafana:
+Verify that the Prometheus URL is correct:
 
 http://localhost:9200/metrics
 
-📌 Geplante Features
+📌 License
 
-✅ XPC-Service für Sandbox-Modus
-✅ Detailliertere Metriken mit Einheiten (MB, GB, KB)
-🔜 Automatische Installation als LaunchDaemon
-🔜 Benachrichtigungen bei kritischen Cache-Werten
+This software is provided under the MIT License.
 
-⚖️ Lizenz
+MIT License:
 
-Dieses Projekt steht unter der MIT-Lizenz – du kannst es frei verwenden, modifizieren und verteilen.
+MIT License
+
+Copyright (c) [Year] Christian Strube
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Usage Restrictions:
+    •    The software must be used in its original, unmodified form. Modifications or derivative works are not permitted without explicit authorization.
+
+📌 Planned Features
+    •    XPC Service for Sandbox Mode
+    •    More Detailed Metrics with Units (MB, GB, KB)
+    •    Automatic Installation as a LaunchDaemon
+    •    Notifications for Critical Cache Levels
+
+Deployment
+
+The current version of the ACCpromAdapter App and the daemon are available as a release. Visit the Releases Page to download the installation package.
+
+For any questions or feedback, please contact me via GitHub or email.

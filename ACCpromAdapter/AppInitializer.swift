@@ -19,9 +19,11 @@ class AppInitializer {
     private init() {}
 
     func initializeApplication(completion: @escaping () -> Void) {
-        Task {
-            await performInitialization()
-            DispatchQueue.main.async {
+        Task { [weak self] in
+            guard let self = self else { return }
+            await self.performInitialization()
+            DispatchQueue.main.async { [weak self] in
+                guard let self = self else { return }
                 self.logger.log("✅ App-Initialisierung abgeschlossen – Starte UI.")
                 NotificationCenter.default.post(name: Notification.Name("AppInitializationComplete"), object: nil)
                 completion()
